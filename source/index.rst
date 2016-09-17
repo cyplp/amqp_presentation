@@ -26,24 +26,38 @@ Approche SGBD SQL
 
  * Remplacer le cron qui fait :
 
-.. code-block: sql
+.. code-block:: sql
 
  UPDATE message WHERE new = 't' RETURNING content ;
 
- ou pire :
 
-.. code-block: sql
+ou pire :
+
+.. code-block:: sql
 
  UPDATE message WHERE new = 't' RETURNING content LIMIT 1;
 
+Problèmes:a
  * manque de perf,
  * manque de scalabilité
  * quid de 10, 20, 50 slaves ?
  * quid de différents types de message, type de subscriber ?
 
-Second Slide
+Solution ?
 ============
 
-* A
-* Bulleted
-* List
+ Une file de message !
+
+ * redis
+ * rq
+ * mqtt
+ * xmpp
+ * amqp
+
+
+AMQP
+====
+
+ * définition
+ * url
+ * standard OASIS
