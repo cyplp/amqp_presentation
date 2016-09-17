@@ -61,3 +61,44 @@ AMQP
  * définition
  * url
  * standard OASIS
+
+
+Exchange et Queue
+=================
+
+Exchange
+========
+
+Queue
+=====
+
+Routing Key
+===========
+
+Type d'exchange
+===============
+
+ * direct
+ * fanout
+ * topic
+ * header
+
+Direct
+======
+
+Fanout
+======
+
+Topic
+=====
+ * joker `*` et `#`
+
+Header
+======
+
+RabbitMQ
+========
+
+ * url
+ * licence
+ * limites
