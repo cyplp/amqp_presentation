@@ -96,9 +96,28 @@ Topic
 Header
 ======
 
+Autres notions
+==============
+
+ * connetion
+ * channel
+ * priority
+
+Example de code python
+======================
+ * pika
+
 RabbitMQ
 ========
 
  * url
  * licence
- * limites
+ * limites et pieges
+ * autre aspects
+ * cluster
+
+personnal e-branding
+====================
+
+ * twitter
+ * github
