@@ -3,13 +3,47 @@
    hieroglyph-quickstart on Sat Sep 17 12:48:18 2016.
 
 
-AMQP
-====
-
-Contents:
+============================
+ Rapide présentaion de AMQP
+============================
+Illustré par rabbitmq
 
 .. toctree::
    :maxdepth: 2
 
+   amqp
 
+Pourquoi
+========
 
+ * propager un message, une information, un évenement ou un ordre à travers un SI
+ * illustration avec EDD
+
+Approche SGBD SQL
+=================
+
+ * champ avec un état
+
+ * Remplacer le cron qui fait :
+
+.. code-block: sql
+
+ UPDATE message WHERE new = 't' RETURNING content ;
+
+ ou pire :
+
+.. code-block: sql
+
+ UPDATE message WHERE new = 't' RETURNING content LIMIT 1;
+
+ * manque de perf,
+ * manque de scalabilité
+ * quid de 10, 20, 50 slaves ?
+ * quid de différents types de message, type de subscriber ?
+
+Second Slide
+============
+
+* A
+* Bulleted
+* List
