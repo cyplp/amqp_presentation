@@ -22,24 +22,38 @@ Pourquoi
 Approche SGBD SQL
 =================
 
- * champ avec un état
-
- * Remplacer le cron qui fait :
+Solution champ avec un état
 
 .. code-block:: sql
 
- UPDATE message WHERE new = 't' RETURNING content ;
+  CREATE TABLE message(id_message SERIAL,
+                       content TEXT,
+		       new BOOLEAN default 'f');
+
+.. figure:: _static/ftp_db_worker.png
+   :scale: 40 %
+
+
+Code
+====
+pull avec :
+
+.. code-block:: sql
+
+ UPDATE message SET new = 'f' WHERE new = 't' RETURNING content ;
 
 
 ou pire :
 
 .. code-block:: sql
 
- UPDATE message WHERE new = 't' RETURNING content LIMIT 1;
+ UPDATE message SET new = 'f' WHERE new = 't' RETURNING content LIMIT 1;
 
-Problèmes:a
- * manque de perf,
- * manque de scalabilité
+Problèmes
+=========
+
+ * manque de performance,
+ * manque de scalabilité,
  * quid de 10, 20, 50 slaves ?
  * quid de différents types de message, type de subscriber ?
 
