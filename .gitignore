@@ -1,0 +1,5 @@
+bin
+.installed.cfg
+build
+*~
+eggs
