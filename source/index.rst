@@ -6,12 +6,7 @@
 ============================
  Rapide présentaion de AMQP
 ============================
-Illustré par rabbitmq
 
-.. toctree::
-   :maxdepth: 2
-
-   amqp
 
 Pourquoi
 ========
