@@ -28,7 +28,7 @@ Solution champ avec un état
 
   CREATE TABLE message(id_message SERIAL,
                        content TEXT,
-		       new BOOLEAN default 'f');
+		       new BOOLEAN default 't');
 
 .. figure:: _static/ftp_db_worker.png
    :scale: 40 %
@@ -58,10 +58,15 @@ Problèmes
  * quid de différents types de message, type de subscriber ?
 
 Solution ?
-============
+==========
 
- Une file de message !
+Une file de message !
 
+.. figure:: _static/ftp_queue_worker.png
+   :scale: 50 %
+
+Quelle file de message ?
+========================
  * redis
  * rq
  * mqtt
