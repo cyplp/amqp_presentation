@@ -12,7 +12,12 @@ Pourquoi
 ========
 
  * propager un message, une information, un évenement ou un ordre à travers un SI
- * illustration avec EDD
+
+.. figure:: _static/ftp_worker.png
+   :scale: 50 %
+
+   illustration avec EDD
+
 
 Approche SGBD SQL
 =================
