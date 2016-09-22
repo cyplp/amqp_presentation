@@ -94,14 +94,13 @@ Protocole
  * but
  * protocole binaire
  * TLS intégré
+ * `amqp://user:password@host/vhost`
 
 Quelques Dates
 ==============
 
-
-
-Exchange et Queue
-=================
+ - premier draft : 2003
+ - version 1.0 : 2011
 
 Exchange
 ========
