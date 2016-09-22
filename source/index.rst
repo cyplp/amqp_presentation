@@ -67,7 +67,8 @@ Une file de message !
 
 Quelle file de message ?
 ========================
- * redis
+
+* redis
  * rq
  * mqtt
  * xmpp
@@ -91,6 +92,7 @@ AMQP
 Protocole
 =========
 
+ * broker
  * but
  * protocole binaire
  * TLS intégré
@@ -102,14 +104,23 @@ Quelques Dates
  - premier draft : 2003
  - version 1.0 : 2011
 
-Exchange
-========
+Exchange et queue
+=================
 
-Queue
-=====
+ - on ne peut que écrire dans un exchange,
+ - on ne peut que lire dans une queue,
+ - entre les 2 le binding.
+
+Exchange et queue
+=================
+
+.. figure:: _static/exchange_et_queue.png
+   :scale: 50 %
+
 
 Routing Key
 ===========
+
 
 Type d'exchange
 ===============
