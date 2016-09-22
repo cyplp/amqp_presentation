@@ -78,8 +78,26 @@ AMQP
 ====
 
  * définition
- * url
+
+   **Advanced Message Queuing Protocol**
+
+ * urls
+
+   - http://www.amqp.org/
+   - https://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol
+
  * standard OASIS
+
+Protocole
+=========
+
+ * but
+ * protocole binaire
+ * TLS intégré
+
+Quelques Dates
+==============
+
 
 
 Exchange et Queue
