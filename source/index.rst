@@ -118,9 +118,14 @@ Exchange et queue
    :scale: 50 %
 
 
-Routing Key
-===========
+Message
+=======
 
+ - livré une fois et une seule fois,
+ - routing key,
+ - header,
+ - payload,
+ - acquitement.
 
 Type d'exchange
 ===============
