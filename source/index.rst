@@ -138,26 +138,30 @@ Type d'exchange
 Direct
 ======
 
+Le message est envoyé sur chacune des queues en fonction de la routing key.
+
 Fanout
 ======
 
+Le message est envoyé sur chacune des queues en quelque soit de la routing key.
+
 Topic
 =====
- * joker `*` et `#`
+ * joker `*` et `#`,
+ * Le message est envoyé selon le match à la RT.
 
 Header
 ======
 
+
 Autres notions
 ==============
 
- * connetion
+ * connection
  * channel
  * priority
-
-Example de code python
-======================
- * pika
+ * exchange, queue, message temporaire
+ * ttl
 
 RabbitMQ
 ========
@@ -171,5 +175,5 @@ RabbitMQ
 personnal e-branding
 ====================
 
- * twitter
+ * twitter : @cyplp
  * github
