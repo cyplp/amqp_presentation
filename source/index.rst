@@ -40,14 +40,19 @@ pull avec :
 
 .. code-block:: sql
 
- UPDATE message SET new = 'f' WHERE new = 't' RETURNING content ;
+ UPDATE message SET new = 'f'
+        WHERE new = 't'
+	RETURNING content;
 
 
 ou pire :
 
 .. code-block:: sql
 
- UPDATE message SET new = 'f' WHERE new = 't' RETURNING content LIMIT 1;
+ UPDATE message SET new = 'f'
+         WHERE new = 't'
+	 RETURNING content
+	 LIMIT 1;
 
 Problèmes
 =========
@@ -68,7 +73,7 @@ Une file de message !
 Quelle file de message ?
 ========================
 
-* redis
+ * redis
  * rq
  * mqtt
  * xmpp
@@ -118,15 +123,6 @@ Exchange et queue
    :scale: 50 %
 
 
-Message
-=======
-
- - livré une fois et une seule fois,
- - routing key,
- - header,
- - payload,
- - acquitement.
-
 Type d'exchange
 ===============
 
@@ -152,6 +148,16 @@ Topic
 
 Header
 ======
+ routing par header
+
+Message
+=======
+
+ - livré une fois et une seule fois,
+ - routing key,
+ - header,
+ - payload,
+ - acquitement.
 
 
 Autres notions
@@ -166,8 +172,8 @@ Autres notions
 RabbitMQ
 ========
 
- * url
- * licence
+ * url : https://www.rabbitmq.com
+ * licence : Mozilla Public Licence
  * limites et pieges
  * autre aspects
  * cluster
@@ -176,4 +182,4 @@ personnal e-branding
 ====================
 
  * twitter : @cyplp
- * github
+ * github : https://github.com/cyplp/amqp_presentation
