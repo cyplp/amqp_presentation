@@ -188,6 +188,14 @@ Header
 Similaire au direct avec un match exact sur les headers.
 
 
+Usage
+======
+
+ * direct : rpc
+ * fanout : broadcast
+ * topic : pub/sub
+
+
 Cas possible 1
 ==============
  Un exchange, des queues
