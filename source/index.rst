@@ -216,8 +216,6 @@ Cas possible 4
 .. figure:: _static/exchanges_exchanges_queues.png
    :scale: 50 %
 
-
-
 Message
 =======
 
@@ -236,6 +234,15 @@ Autres notions
  * ttl
  * connection
  * channel
+
+Inconvenients et limites
+========================
+
+ * fire & forget,
+ * on ne sait pas ce qu'il y a dans les files,
+ * comment tracer l'emission et la reception d'un message ?
+ * le client doit être au courant du cluster,
+
 
 RabbitMQ
 ========
