@@ -257,4 +257,5 @@ Personnal e-branding
 ====================
 
  * twitter : @cyplp
+ * irc : cyp sur #paulla sur freenode
  * github : https://github.com/cyplp/amqp_presentation
