@@ -4,14 +4,14 @@
 
 
 ============================
- Rapide présentaion de AMQP
+ Rapide présentation de AMQP
 ============================
 
 
 Pourquoi
 ========
 
- * propager un message, une information, un évenement ou un ordre à travers un SI
+ * propager un message, une information, un évènement ou un ordre à travers un SI
 
 .. figure:: _static/ftp_worker.png
    :scale: 50 %
