@@ -234,6 +234,7 @@ Autres notions
  * ttl
  * connection
  * channel
+ * heartbeat
 
 Inconvenients et limites
 ========================
