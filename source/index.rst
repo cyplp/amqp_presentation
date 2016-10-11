@@ -62,6 +62,13 @@ Problèmes
  * quid de 10, 20, 50 slaves ?
  * quid de différents types de message, type de subscriber ?
 
+
+Pourquoi ? bis
+==============
+
+ * Pour faire de l'asynchrone (Fire & Forget),
+ * pour faire du rpc.
+
 Solution ?
 ==========
 
@@ -69,6 +76,8 @@ Une file de message !
 
 .. figure:: _static/ftp_queue_worker.png
    :scale: 50 %
+
+
 
 Quelle file de message ?
 ========================
@@ -97,8 +106,8 @@ AMQP
 Protocole
 =========
 
+ * à l'origine pour les salles de marchés
  * broker
- * but
  * protocole binaire
  * TLS intégré
  * `amqp://user:password@host/vhost`
@@ -121,7 +130,6 @@ Exchange et queue
 
 .. figure:: _static/exchange_et_queue.png
    :scale: 50 %
-
 
 Type d'exchange
 ===============
@@ -176,13 +184,44 @@ Le message est envoyé selon le match à la routing key.
 
 Header
 ======
- routing par header
+
+Similaire au direct avec un match exact sur les headers.
+
+
+Cas possible 1
+==============
+ Un exchange, des queues
+
+.. figure:: _static/topic.png
+   :scale: 50 %
+
+Cas possible 2
+==============
+ des exchanges, une queue
+
+.. figure:: _static/exchanges_queue.png
+   :scale: 50 %
+
+Cas possible 3
+==============
+ des exchanges, des queues
+
+.. figure:: _static/exchanges_queues.png
+   :scale: 50 %
+
+Cas possible 4
+==============
+ des exchanges, des exchanges, des queues
+
+.. figure:: _static/exchanges_exchanges_queues.png
+   :scale: 50 %
+
+
 
 Message
 =======
 
- - livré une fois et une seule fois,
- - routing key,
+ - dans une queue, un message livré une fois et une seule fois,
  - header,
  - payload,
  - acquitement.
@@ -191,11 +230,12 @@ Message
 Autres notions
 ==============
 
- * connection
- * channel
+ * prefetch
  * priority
  * exchange, queue, message temporaire
  * ttl
+ * connection
+ * channel
 
 RabbitMQ
 ========
@@ -206,7 +246,7 @@ RabbitMQ
  * autre aspects
  * cluster
 
-personnal e-branding
+Personnal e-branding
 ====================
 
  * twitter : @cyplp
