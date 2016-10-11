@@ -134,17 +134,45 @@ Type d'exchange
 Direct
 ======
 
+.. figure:: _static/direct.png
+   :scale: 50 %
+
 Le message est envoyé sur chacune des queues en fonction de la routing key.
+ * un message avec la routing key **foo** est reçu par **queue1** et **queue2**,
+ * un message avec la routing key **bar** est reçu par **queue2** et **queue3**,
+ * un message avec la routing key **baz** n'est pas routé.
 
 Fanout
 ======
+
+.. figure:: _static/direct.png
+   :scale: 50 %
 
 Le message est envoyé sur chacune des queues en quelque soit de la routing key.
 
 Topic
 =====
- * joker `*` et `#`,
- * Le message est envoyé selon le match à la RT.
+
+.. figure:: _static/topic.png
+   :scale: 50 %
+
+Le message est envoyé selon le match à la routing key.
+
+ * un message avec la routing key **foo.bar** est reçu par **queue1** et **queue2**,
+ * un message avec la routing key **foo.bar.baz** est reçu par **queue2** et **queue3**,
+ * un message avec la routing key **baz.bar** est reçu par **queue2**.
+
+
+Topic
+=====
+
+.. figure:: _static/topic.png
+   :scale: 50 %
+
+Le message est envoyé selon le match à la routing key.
+
+ * un message avec la routing key **baz.bar.foo** est reçu par **queue3**,
+ * un message avec la routing key **bar.baz.foo** n'est pas routé.
 
 Header
 ======
