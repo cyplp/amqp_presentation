@@ -8,7 +8,7 @@
 ============================
 
 
-Pourquoi
+Objectif
 ========
 
  * propager un message, une information, un évènement ou un ordre à travers un SI
@@ -63,8 +63,8 @@ Problèmes
  * quid de différents types de message, type de subscriber ?
 
 
-Pourquoi ? bis
-==============
+Pourquoi ?
+==========
 
  * Pour faire de l'asynchrone (Fire & Forget),
  * pour faire du rpc.
@@ -122,6 +122,7 @@ Exchange et queue
 =================
 
  - on ne peut que écrire dans un exchange,
+ - un exchange n'a pas de contenu,
  - on ne peut que lire dans une queue,
  - entre les 2 le binding.
 
