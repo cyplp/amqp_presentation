@@ -83,7 +83,6 @@ Quelle file de message ?
 ========================
 
  * redis
- * rq
  * mqtt
  * xmpp
  * amqp
@@ -103,6 +102,13 @@ AMQP
 
  * standard OASIS
 
+Quelques Dates
+==============
+
+ - premier draft : 2003
+ - version 1.0 : 2011
+
+
 Protocole
 =========
 
@@ -112,11 +118,6 @@ Protocole
  * TLS intégré
  * `amqp://user:password@host/vhost`
 
-Quelques Dates
-==============
-
- - premier draft : 2003
- - version 1.0 : 2011
 
 Exchange et queue
 =================
